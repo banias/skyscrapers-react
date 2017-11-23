@@ -2,18 +2,64 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+
+
+
 class App extends Component {
+renderSkyscraperCell(i) {
+  return (
+    <button class="flex-item">
+     </button>
+  )
+}
+
+renderSkyscraperHint(i) {
+  return (
+    <button class="flex-skyscraperHint" >
+     </button>
+  )
+}
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+ <div class="flex-container">
+   {this.renderSkyscraperHint()}
+   {this.renderSkyscraperHint()}
+   {this.renderSkyscraperHint()}
+   </div>
+ <div class="flex-container">
+   
+   {this.renderSkyscraperHint()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+   {this.renderSkyscraperHint()}
+ </div>
+
+    <div class="flex-container">
+   {this.renderSkyscraperHint()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+   {this.renderSkyscraperHint()}
+</div>
+    <div class="flex-container">
+   {this.renderSkyscraperHint()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+   {this.renderSkyscraperHint()}
+  </div>
+   <div class="flex-container">
+
+      {this.renderSkyscraperHint()}
+      {this.renderSkyscraperHint()}
+      {this.renderSkyscraperHint()}
+   </div>     
+</div>
     );
   }
 }
