@@ -22,7 +22,7 @@ renderSkyscraperHint(i) {
   render() {
     return (
       <div className="App">
- <div class="flex-container">
+ <div class="flex-skyscrapperHintRow">
    {this.renderSkyscraperHint()}
    {this.renderSkyscraperHint()}
     {this.renderSkyscraperHint()}
@@ -62,7 +62,7 @@ renderSkyscraperHint(i) {
       {this.renderSkyscraperCell()}
    {this.renderSkyscraperHint()}
   </div>
-   <div class="flex-container">
+   <div class="flex-skyscrapperHintRow">
       {this.renderSkyscraperHint()}
       {this.renderSkyscraperHint()}
       {this.renderSkyscraperHint()}
