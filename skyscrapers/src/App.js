@@ -15,10 +15,22 @@ class App extends Component {
   }
 
   rollRandomState() {
+    fetch("http://192.168.20.64:8089/api/solve", 
+    {
+      method: "GET"
+    })
+      .catch(function(x) {
+        alert(x)
+      })
+        .then(function(respnse) {
+            return respnse.json()
+      })
+      .then((data) => {
+
     this.setState({
-      hintCells: this.state.hintCells,
-      skyscrapersCells: Array(16).fill(Math.random()),
-    });
+      hintCells: this.state.hintCells.slice(),
+      skyscrapersCells: data.result,
+    });})
   }
 
   renderSkyscraperCell(index) {
