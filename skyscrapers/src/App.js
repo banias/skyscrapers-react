@@ -1,15 +1,19 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-
-
+import SkyscraperCell from './SkyscraperCell';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      cells: Array(16).fill(null),
+    };
+  }
+
 renderSkyscraperCell(i) {
   return (
-    <button class="flex-item">
-     </button>
+    <SkyscraperCell value={i}/>
   )
 }
 
@@ -31,7 +35,7 @@ renderSkyscraperHint(i) {
  <div class="flex-container">
    
    {this.renderSkyscraperHint()}
-      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell(1)}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
