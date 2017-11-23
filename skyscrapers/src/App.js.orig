@@ -69,11 +69,19 @@ renderSkyscraperHint(i) {
 </div>
  <div className="flex-container">
    {this.renderSkyscraperHint(13)}
+<<<<<<< 1396e34569f8b02a41e4d358a347f71429276118
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+   {this.renderSkyscraperHint(6)}
+=======
       {this.renderSkyscraperCell(8)}
       {this.renderSkyscraperCell(9)}
       {this.renderSkyscraperCell(10)}
       {this.renderSkyscraperCell(11)}
-   {this.renderSkyscraperHint(6)}
+   {this.renderSkyscraperHint(8)}
+>>>>>>> Random state on GoGo button.
 </div>
     <div className="flex-container">
    {this.renderSkyscraperHint(12)}

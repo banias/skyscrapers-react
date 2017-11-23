@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 class GogoPowerRangers extends Component {
   render() {
     return (
-      <button onClick={() => alert('ALERT!')}>
+      <button onClick={this.props.onClick}>
         GoGo!
       </button>
       )
