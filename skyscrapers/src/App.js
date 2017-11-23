@@ -25,6 +25,7 @@ renderSkyscraperHint(i) {
  <div class="flex-container">
    {this.renderSkyscraperHint()}
    {this.renderSkyscraperHint()}
+    {this.renderSkyscraperHint()}
    {this.renderSkyscraperHint()}
    </div>
  <div class="flex-container">
@@ -37,7 +38,15 @@ renderSkyscraperHint(i) {
    {this.renderSkyscraperHint()}
  </div>
 
-    <div class="flex-container">
+  <div class="flex-container">
+   {this.renderSkyscraperHint()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+      {this.renderSkyscraperCell()}
+   {this.renderSkyscraperHint()}
+</div>
+ <div class="flex-container">
    {this.renderSkyscraperHint()}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
@@ -54,7 +63,7 @@ renderSkyscraperHint(i) {
    {this.renderSkyscraperHint()}
   </div>
    <div class="flex-container">
-
+      {this.renderSkyscraperHint()}
       {this.renderSkyscraperHint()}
       {this.renderSkyscraperHint()}
       {this.renderSkyscraperHint()}
