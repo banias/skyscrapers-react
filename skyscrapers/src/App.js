@@ -15,9 +15,11 @@ class App extends Component {
   }
 
   rollRandomState() {
+    const request = JSON.stringify(this.state.hintCells);
     fetch("http://192.168.20.64:8089/api/solve", 
     {
-      method: "GET"
+      method: "POST",
+      body : request 
     })
       .catch(function(x) {
         alert(x)
