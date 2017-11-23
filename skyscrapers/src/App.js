@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SkyscraperCell from './SkyscraperCell';
-import SkyscraperHint from './SkyscraperHint'
+import SkyscraperHint from './SkyscraperHint';
+import GogoPowerRangers from './GogoPowerRangers.js';
 
 class App extends Component {
   constructor(props) {
@@ -74,7 +75,8 @@ renderSkyscraperHint(i) {
       {this.renderSkyscraperHint(10)}
       {this.renderSkyscraperHint(11)}
       {this.renderSkyscraperHint(12)}
-   </div>     
+   </div>
+<GogoPowerRangers />
 </div>
     );
   }
