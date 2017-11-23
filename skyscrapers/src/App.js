@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import SkyscraperCell from './SkyscraperCell';
+import SkyscraperHint from './SkyscraperHint'
 
 class App extends Component {
   constructor(props) {
@@ -17,60 +18,62 @@ renderSkyscraperCell(i) {
   )
 }
 
+handleClick(i) {
+ window.alert(''+i);
+}
+
 renderSkyscraperHint(i) {
   return (
-    <button class="flex-skyscraperHint" >
-     </button>
+    <SkyscraperHint onClick={() => this.handleClick(i)} />
   )
 }
   render() {
     return (
       <div className="App">
- <div class="flex-skyscrapperHintRow">
-   {this.renderSkyscraperHint()}
-   {this.renderSkyscraperHint()}
-    {this.renderSkyscraperHint()}
-   {this.renderSkyscraperHint()}
+ <div className="flex-skyscrapperHintRow">
+   {this.renderSkyscraperHint(1)}
+   {this.renderSkyscraperHint(2)}
+    {this.renderSkyscraperHint(3)}
+   {this.renderSkyscraperHint(4)}
    </div>
- <div class="flex-container">
-   
-   {this.renderSkyscraperHint()}
-      {this.renderSkyscraperCell(1)}
+ <div className="flex-container">
+   {this.renderSkyscraperHint(16)}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
-   {this.renderSkyscraperHint()}
+      {this.renderSkyscraperCell()}
+   {this.renderSkyscraperHint(5)}
  </div>
 
-  <div class="flex-container">
-   {this.renderSkyscraperHint()}
+  <div className="flex-container">
+   {this.renderSkyscraperHint(15)}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
-   {this.renderSkyscraperHint()}
+   {this.renderSkyscraperHint(6)}
 </div>
- <div class="flex-container">
-   {this.renderSkyscraperHint()}
+ <div className="flex-container">
+   {this.renderSkyscraperHint(14)}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
-   {this.renderSkyscraperHint()}
+   {this.renderSkyscraperHint(7)}
 </div>
-    <div class="flex-container">
-   {this.renderSkyscraperHint()}
+    <div className="flex-container">
+   {this.renderSkyscraperHint(13)}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
       {this.renderSkyscraperCell()}
-   {this.renderSkyscraperHint()}
+   {this.renderSkyscraperHint(8)}
   </div>
-   <div class="flex-skyscrapperHintRow">
-      {this.renderSkyscraperHint()}
-      {this.renderSkyscraperHint()}
-      {this.renderSkyscraperHint()}
-      {this.renderSkyscraperHint()}
+   <div className="flex-skyscrapperHintRow">
+      {this.renderSkyscraperHint(9)}
+      {this.renderSkyscraperHint(10)}
+      {this.renderSkyscraperHint(11)}
+      {this.renderSkyscraperHint(12)}
    </div>     
 </div>
     );

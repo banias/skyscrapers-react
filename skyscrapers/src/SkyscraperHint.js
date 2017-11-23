@@ -10,7 +10,7 @@ class SkyscrapperCell extends Component {
 
     render() {
         return (
-            <button className="flex-item">
+            <button className="flex-skyscraperHint" onClick={this.props.onClick}>
                 {this.props.value}
             </button>
         );
